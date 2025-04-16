@@ -371,3 +371,23 @@ a.button:hover {
         height: 25vh; /* Reduce height on smaller screens */
     }
 }
+
+/* Styling for the ESL Icon on the Schedule Page */
+.esl-icon-container {
+    display: flex;          /* Enable Flexbox */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center;    /* Center items horizontally */
+    margin-bottom: 15px;    /* Add some space below the heading */
+}
+
+.esl-icon {
+    width: 40px;           /* Make the icon smaller (adjust px value as needed) */
+    height: auto;          /* Maintain aspect ratio */
+    margin-bottom: 5px;    /* Add a small space between icon and heading */
+}
+
+/* Optional: Ensure the H2 inside the container is also centered if needed */
+.esl-icon-container h2 {
+   text-align: center; /* Usually redundant with align-items: center, but safe */
+   margin-top: 0; /* Remove default top margin if needed */
+}
