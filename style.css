@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&display=swap');
+
 /* Basic Reset & Defaults */
 * {
     margin: 0;
@@ -6,11 +8,13 @@
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* Prioritize Calibri, then fall back to others */
+    font-family: Calibri, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
     color: #333;
     background-color: #f4f4f4; /* Light grey background */
 }
+
 
 .container {
     max-width: 1100px;
@@ -71,10 +75,10 @@ ul {
 
 
 .frog-logo {
-    width: 40px; /* Adjust size */
-    height: 40px;
+    width: 40px;   /* Set desired width */
+    height: auto;  /* Let height adjust automatically */
     margin-right: 10px;
-    vertical-align: middle;
+    vertical-align: middle; /* Keeps it aligned nicely with text */
 }
 
 .main-nav ul {
@@ -274,10 +278,12 @@ a.button:hover {
     margin-bottom: 5px;
 }
 .frog-logo-footer {
-    width: 25px;
-    height: 25px;
+    width: 25px;   /* Set desired width */
+    height: auto;  /* Let height adjust automatically */
     opacity: 0.7;
     margin-top: 10px;
+    display: inline-block; /* Needed since footer text is centered */
+    vertical-align: middle; /* Align better if text wraps */
 }
 
 /* Schedule Page Specific */
@@ -285,6 +291,71 @@ a.button:hover {
     text-align: center;
     margin-bottom: 2rem;
 }
+/* Social Icon Button Styling */
+.social-button {
+    width: 45px;         /* Fixed width */
+    height: 45px;        /* Fixed height (makes it square) */
+    padding: 0;          /* Remove default padding */
+    font-size: 1.4em;    /* Size of the icon */
+    line-height: 45px;   /* Vertically center icon (matches height) */
+    text-align: center;  /* Horizontally center icon */
+    border-radius: 50%;  /* Make buttons circular */
+    transition: transform 0.2s ease-in-out, background-color 0.3s ease; /* Smooth transitions */
+    /* display: inline-flex; /* Alternative centering method */
+    /* align-items: center; */
+    /* justify-content: center; */
+}
+
+.social-button:hover {
+    transform: scale(1.1); /* Slightly enlarge on hover */
+    color: #fff; /* Ensure icon color is white on hover */
+    text-decoration: none; /* Remove underline */
+}
+
+/* Specific Brand Colors */
+.social-button.youtube-btn {
+    background-color: #FF0000; /* YouTube Red */
+    color: #fff;
+}
+.social-button.youtube-btn:hover {
+    background-color: #cc0000; /* Darker Red */
+}
+
+.social-button.instagram-btn {
+    /* Instagram Gradient - more complex, using a solid color for simplicity */
+    background-color: #E1306C; /* Instagram Pink/Red */
+    color: #fff;
+    /* For a simple gradient:
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+    */
+}
+.social-button.instagram-btn:hover {
+    background-color: #c13584; /* Darker Pink */
+}
+
+.social-button.bmac-btn {
+    background-color: #FFDD00; /* Buy Me a Coffee Yellow */
+    color: #000; /* Black icon for contrast */
+}
+.social-button.bmac-btn:hover {
+    background-color: #e6c600; /* Darker Yellow */
+    color: #000;
+}
+
+/* Optional: GitHub Button Style */
+.social-button.github-btn {
+    background-color: #333; /* GitHub Black/Gray */
+    color: #fff;
+}
+.social-button.github-btn:hover {
+    background-color: #111; /* Darker Gray */
+}
+
+/* Ensure the container paragraph centers the inline-block buttons */
+.social-links p {
+    text-align: center;
+}
+
 .booking-info, .free-tutoring-info {
     background-color: #e8f5e9;
     padding: 25px;
@@ -390,4 +461,49 @@ a.button:hover {
 .esl-icon-container h2 {
    text-align: center; /* Usually redundant with align-items: center, but safe */
    margin-top: 0; /* Remove default top margin if needed */
+}
+
+/* Style for the introductory text on the schedule page */
+.booking-intro-text {
+    text-align: center;     /* Center the text */
+    font-size: 1.15em;      /* Make it slightly larger */
+    font-weight: 500;       /* Give it a bit more weight */
+    color: #2e8b57;         /* Use the Sea Green color like buttons */
+    background-color: #ffffff; /* White background to stand out slightly */
+    padding: 20px;          /* Add padding around the text */
+    margin-top: 1rem;       /* Add space above */
+    margin-bottom: 2.5rem;  /* Add more space below, before the booking box */
+    border-radius: 8px;     /* Rounded corners */
+    border-left: 5px solid #006400; /* Add a solid dark green left border */
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    position: relative;     /* Needed for the pseudo-element icon */
+    padding-left: 45px;     /* Make space for the icon on the left */
+    font-family: 'Open Sans', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+/* Add an icon using a pseudo-element */
+.booking-intro-text::before {
+    content: "🎓"; /* Unicode graduation cap icon */
+    /* Alternative icons you could use: 📚 (books), 💡 (lightbulb), 🗣️ (speaking head) */
+    position: absolute;     /* Position relative to the parent paragraph */
+    left: 15px;             /* Position from the left edge */
+    top: 50%;               /* Position vertically centered */
+    transform: translateY(-50%); /* Fine-tune vertical centering */
+    font-size: 1.6em;       /* Reduced size slightly */
+    color: #006400;         /* Dark green color for the icon */
+    line-height: 1;         /* Ensure line height doesn't interfere */
+}
+
+
+/* Optional: Adjust alignment slightly on smaller screens if needed */
+@media (max-width: 480px) {
+    .booking-intro-text {
+        padding-left: 40px; /* Slightly less padding */
+        font-size: 1.1em;   /* Slightly smaller font */
+    }
+    .booking-intro-text::before {
+        font-size: 1.6em;   /* Slightly smaller icon */
+        left: 12px;
+    }
 }
