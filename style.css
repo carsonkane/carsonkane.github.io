@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&display=swap');
+/* Add this line near the top with other @imports */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+
 
 /* Basic Reset & Defaults */
 * {
@@ -465,26 +468,31 @@ a.button:hover {
 
 /* Style for the introductory text on the schedule page */
 .booking-intro-text {
-    text-align: center;     /* Center the text */
-    font-size: 1.15em;      /* Make it slightly larger */
-    font-weight: 500;       /* Give it a bit more weight */
-    color: #2e8b57;         /* Use the Sea Green color like buttons */
-    background-color: #ffffff; /* White background to stand out slightly */
-    padding: 20px;          /* Add padding around the text */
-    margin-top: 1rem;       /* Add space above */
-    margin-bottom: 2.5rem;  /* Add more space below, before the booking box */
-    border-radius: 8px;     /* Rounded corners */
-    border-left: 5px solid #006400; /* Add a solid dark green left border */
-    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-    position: relative;     /* Needed for the pseudo-element icon */
-    padding-left: 45px;     /* Make space for the icon on the left */
-    font-family: 'Open Sans', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    /* font-size: 1.15em; */ /* Keep or adjust as needed */
+    font-size: 1.2em;       /* Slightly larger for more impact */
+    /* font-weight: 500; */ /* Remove or comment out previous weight */
+    font-weight: 700;       /* Use the bold weight of Montserrat */
+    color: #2e8b57;
+    background-color: #ffffff;
+    padding: 20px;
+    margin-top: 1rem;
+    margin-bottom: 2.5rem;
+    border-radius: 8px;
+    border-left: 5px solid #006400;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    padding-left: 45px;
+    /* Change the font-family to prioritize Montserrat */
+    font-family: 'Montserrat', Calibri, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 0.5px; /* Optional: Add slight letter spacing for style */
 }
+
 
 
 /* Add an icon using a pseudo-element */
 .booking-intro-text::before {
-    content: "🎓"; /* Unicode graduation cap icon */
+    content: "🗣️"; /* Unicode graduation cap icon */
     /* Alternative icons you could use: 📚 (books), 💡 (lightbulb), 🗣️ (speaking head) */
     position: absolute;     /* Position relative to the parent paragraph */
     left: 15px;             /* Position from the left edge */
