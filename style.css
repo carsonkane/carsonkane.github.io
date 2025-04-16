@@ -267,6 +267,19 @@ a.button:hover {
     background-color: #2F4F4F; /* Dark Slate Gray */
 }
 
+/* LinkedIn Social Button Style */
+.social-button.linkedin-btn {
+    background-color: #0077B5; /* LinkedIn blue */
+    color: #ffffff; /* White icon */
+}
+
+.social-button.linkedin-btn:hover,
+.social-button.linkedin-btn:focus {
+    background-color: #005582; /* Darker blue on hover/focus */
+    color: #ffffff; /* Keep icon white */
+}
+
+
 
 /* Footer */
 .site-footer {
