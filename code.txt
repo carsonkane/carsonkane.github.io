@@ -1,0 +1,21 @@
+carson-kane-website/
+├── index.html
+├── schedule.html
+├── contact.html
+├── style.css
+├── assets/
+│   ├── img/
+│   │   ├── WOW.jpg                   (Your cover image)
+│   │   ├── IMG_7342.jpeg             (Your portrait)
+│   │   ├── PXL_20241016_025456125.jpg (Your photography example)
+│   │   ├── IMG_2252.jpg              (Your classroom photo - *needs conversion*)
+│   │   ├── 1de40967-0bdb-4b9b-9034-5113f59c5ee7.png (Frog icon)
+│   │   └── esl_icon.png              (Placeholder/Example icon if needed)
+│   │   └── tefl_cert_preview.jpg     (Optional: First page of PDF as image)
+│   ├── docs/
+│   │   ├── ESL_CV_-_March_11.pdf     (Your CV)
+│   │   ├── TEFL_Maximo_Nivel_-_Carson_Kane.pdf (Your TEFL Cert)
+│   └── video/
+│       └── website_video.mp4         (Your video - *needs conversion*)
+└── My TEFL Certification 1a32e43eb67b8078a885feb3ba860e9d/  (Original Notion Asset folder for reference, may contain duplicate cert)
+    └── TEFL_Maximo_Nivel_-_Carson_Kane.pdf
