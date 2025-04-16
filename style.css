@@ -381,7 +381,7 @@ a.button:hover {
 }
 
 .esl-icon {
-    width: 40px;           /* Make the icon smaller (adjust px value as needed) */
+    width: 100px;           /* Make the icon smaller (adjust px value as needed) */
     height: auto;          /* Maintain aspect ratio */
     margin-bottom: 5px;    /* Add a small space between icon and heading */
 }
