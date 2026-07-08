@@ -237,3 +237,9 @@ a:hover {
     justify-content: center;
     flex-wrap: wrap;
 }
+
+@media (min-width: 900px) {
+    .desktop-tagline {
+        display: inline-block !important;
+    }
+}

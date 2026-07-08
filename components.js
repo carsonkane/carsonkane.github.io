@@ -3,9 +3,12 @@ class SiteHeader extends HTMLElement {
         this.innerHTML = `
             <nav class="navbar">
                 <div class="brand-container">
-                    <a href="index.html" style="display: flex; align-items: center; gap: 1rem;">
+                    <a href="index.html" style="display: flex; align-items: center; gap: 1rem; text-decoration: none;">
                         <img src="assets/img/1de40967-0bdb-4b9b-9034-5113f59c5ee7.png" alt="Carson Kane Brand Stamp" class="brand-logo">
-                        <span class="brand-text">CARSON KANE - English Language Teaching & Consulting</span>
+                        <div style="display: flex; align-items: center; gap: 0.5rem; flex-wrap: wrap;">
+                            <span class="brand-text">CARSON KANE</span>
+                            <span style="color: var(--text-muted); font-size: 0.9rem; font-weight: 400; font-family: 'Inter', sans-serif; display: none; margin-top: 3px;" class="desktop-tagline"> | English Language Teaching & Consulting</span>
+                        </div>
                     </a>
                 </div>
                 <ul class="nav-links">
@@ -30,25 +33,3 @@ class SiteHeader extends HTMLElement {
         });
     }
 }
-
-class SiteFooter extends HTMLElement {
-    connectedCallback() {
-        this.innerHTML = `
-            <footer class="site-footer">
-                <div class="footer-content">
-                    <img src="assets/img/1de40967-0bdb-4b9b-9034-5113f59c5ee7.png" alt="Frog Icon" style="max-width: 40px; filter: grayscale(100%) brightness(200%); opacity: 0.5;">
-                    <ul class="footer-nav">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="hire.html">Hire Me</a></li>
-                        <li><a href="methodology.html">Methodology</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                    <p style="font-size: 0.9rem; opacity: 0.8;">&copy; ${new Date().getFullYear()} Carson Kane. Berlin, Germany.</p>
-                </div>
-            </footer>
-        `;
-    }
-}
-
-customElements.define('site-header', SiteHeader);
-customElements.define('site-footer', SiteFooter);
