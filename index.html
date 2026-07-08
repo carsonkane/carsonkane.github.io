@@ -5,49 +5,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Carson Kane | Professional English Training Berlin</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="assets/img/1de40967-0bdb-4b9b-9034-5113f59c5ee7.png" type="image/png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
-    <nav class="navbar">
-        <div class="brand-container">
-            <a href="index.html" style="display: flex; align-items: center; gap: 1rem;">
-                <img src="assets/img/1de40967-0bdb-4b9b-9034-5113f59c5ee7.png" alt="Carson Kane Brand Stamp" class="brand-logo">
-                <span style="font-family: 'Montserrat', sans-serif; font-weight: 700; color: var(--accent-primary);">CARSON KANE</span>
-            </a>
-        </div>
-        <ul class="nav-links">
-            <li><a href="index.html" class="active">Profile</a></li>
-            <li><a href="hire.html">Hire Me</a></li>
-            <li><a href="methodology.html">Methodology</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
+    <site-header></site-header>
 
     <main class="container">
+        <section class="services-intro" style="margin-bottom: 4rem;">
+            <h1>Services:</h1>
+            <h3 style="color: var(--accent-primary); margin-bottom: 1rem;">Specializing in English teaching/training in corporate, business, and private contexts.</h3>
+        
+            <div class="profile-content">
+                <p>
+                    I offer English lessons tailored to your needs and learning goals. Available for freelance contracts, you can hire me as a private or institutional teacher.
+                </p>
+                
+                <!-- Added anchor hashes to the hrefs -->
+                <div style="margin-top: 1.5rem; display: flex; gap: 1rem; flex-wrap: wrap; width: 100%;">
+                    <a href="hire.html#corporate-services" style="flex: 1; text-align: center; background: var(--accent-primary); color: #fff; padding: 0.75rem 1.5rem; border-radius: 4px; font-weight: 600; box-shadow: 0 4px 6px rgba(0,0,0,0.05);">Instructional Services</a>
+                    <a href="hire.html#private-tutoring" style="flex: 1; text-align: center; background: var(--accent-secondary); color: #fff; padding: 0.75rem 1.5rem; border-radius: 4px; font-weight: 600; box-shadow: 0 4px 6px rgba(0,0,0,0.05);">Private Tutoring</a>
+                </div>
+            </div>
+        </section>
+
         <header style="margin-bottom: 3rem;">
-            <h1>English Language Teaching & Consulting</h1>
-            <p style="font-size: 1.2rem; color: var(--text-muted);">
-                Located in Berlin, Germany. Originally from Columbus, OH, USA.
-            </p>
+            <h1>About Me: Carson Kane</h1>
         </header>
 
         <section class="grid-3-col" style="grid-template-columns: 2fr 1fr; align-items: center;">
             <div class="profile-content">
-                <h2>Professional Profile</h2>
                 <p>
-                    Holding an <strong>MA in TEFL</strong> and a <strong>BA in Linguistics</strong> (Magna Cum Laude, Ohio State University), my instructional approach bridges rigorous computational phonology with practical adult language acquisition.
+                    I hold a <strong>Master's Degree in Teaching and Learning English as a Foreign/Second Language</strong> from <em>Universitat Rovira i Virgili</em> in Spain and a <strong>Bachelor's Degree in Linguistics</strong> from <em>The Ohio State University</em> in the USA. I am also TEFL (<strong>Teaching English as a Foreign Language</strong>) certified by the international language school <em>Máximo Nivel</em>.
                 </p>
                 <br>
                 <p>
-                    My pedagogical framework is deeply informed by extensive personal language acquisition. Drawing from fluency in Spanish (DELE C1) and advanced Catalan, alongside comparative structural studies in Japanese, French, Portuguese, and Italian, I leverage structural breakdowns and core linguistic principles to clarify the mechanics of English.
+                    My pedagogical framework is informed by my experience learning and teaching languages. As someone who is passionate about language, I use linguistic principles of second language acquisition better teach the grammar of English. I draw directly from my own process of achieving C1 fluency in Spanish (Certified by the <em>Cervantes Institute</em>) and a B2 in Catalan, alongside continuing studies in German (B1) and Japanese (A2).
                 </p>
                 <br>
                 <p>
-                    I specialize in systematic scaffolding for foundational and basic-level learners. By actively managing cognitive load and utilizing highly structured input paradigms, I ensure rapid, measurable acquisition for students starting at A1/A2 levels, while scaling these same principles for advanced corporate communications.
+                    My background extends beyond traditional pedagogy into technical domains. With expertise in local LLMs, PowerPoint, JavaScript, HTML, Python, and video marketing, I integrate modern technology tools into corporate language training environments and group classroom settings.
                 </p>
                 
-                <div style="margin-top: 2rem; display: flex; gap: 1rem;">
+                <div style="margin-top: 2rem; display: flex; gap: 1rem; flex-wrap: wrap;">
                     <a href="assets/docs/ESL_CV_-_March_11.pdf" target="_blank" rel="noopener noreferrer" style="background: var(--accent-primary); color: #fff; padding: 0.75rem 1.5rem; border-radius: 4px; font-weight: 600;">View Curriculum Vitae</a>
                     <a href="assets/docs/TEFL_Maximo_Nivel_-_Carson_Kane.pdf" target="_blank" rel="noopener noreferrer" style="border: 1px solid var(--accent-primary); color: var(--accent-primary); padding: 0.75rem 1.5rem; border-radius: 4px; font-weight: 600;">Verify TEFL Credentials</a>
                 </div>
@@ -57,27 +56,10 @@
                 <img src="assets/img/IMG_7342.jpeg" alt="Carson Kane" style="width: 100%; max-width: 300px; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
             </div>
         </section>
-
-        <hr class="section-divider">
-
-        <section class="cta-section" style="text-align: center;">
-            <h3>Available for Freelance Contracts & Corporate Courses</h3>
-            <p style="margin-bottom: 1.5rem;">Review my pedagogical frameworks, specific course offerings, and domain expertise.</p>
-            <a href="hire.html" style="background: var(--accent-secondary); color: #fff; padding: 0.75rem 1.5rem; border-radius: 4px; font-weight: 600;">View Corporate Services</a>
-        </section>
     </main>
 
-    <footer class="site-footer">
-        <div class="footer-content">
-            <img src="assets/img/1de40967-0bdb-4b9b-9034-5113f59c5ee7.png" alt="Frog Icon" style="max-width: 40px; filter: grayscale(100%) brightness(200%); opacity: 0.5;">
-            <ul class="footer-nav">
-                <li><a href="index.html">Profile</a></li>
-                <li><a href="hire.html">Hire Me</a></li>
-                <li><a href="methodology.html">Methodology</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-            <p style="font-size: 0.9rem; opacity: 0.8;">&copy; <script>document.write(new Date().getFullYear())</script> Carson Kane. Berlin, Germany.</p>
-        </div>
-    </footer>
+    <site-footer></site-footer>
+
+    <script src="components.js"></script>
 </body>
 </html>
