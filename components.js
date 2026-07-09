@@ -16,6 +16,14 @@ class SiteHeader extends HTMLElement {
                     <li><a href="hire.html">Hire Me</a></li>
                     <li><a href="methodology.html">Methodology</a></li>
                     <li><a href="contact.html">Contact</a></li>
+                    <!-- Language Switcher -->
+                    <li style="margin-left: 1rem; border-left: 1px solid var(--border-subtle); padding-left: 1rem;">
+                        <a href="index.html" style="color: var(--accent-primary); font-weight: 700;">EN</a> 
+                        <span style="color: var(--border-subtle)">|</span> 
+                        <a href="de/index.html">DE</a> 
+                        <span style="color: var(--border-subtle)">|</span> 
+                        <a href="es/index.html">ES</a>
+                    </li>
                 </ul>
             </nav>
         `;
@@ -25,7 +33,7 @@ class SiteHeader extends HTMLElement {
         const navLinks = this.querySelectorAll('.nav-links a');
         
         navLinks.forEach(link => {
-            const linkPath = new URL(link.href).pathname;
+            const linkPath = new URL(link.href, window.location.origin).pathname;
             
             // Checks if the paths match, ignoring any # tags at the end of the URL
             if (currentPath === linkPath || (currentPath === '/' && linkPath === '/index.html')) {
